@@ -6,15 +6,16 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: #424f6f;
+    background: rgb(0, 0, 0);
 }
 
+/*ghost sizing and background*/
 #container {
     width: 400px;
     height: 400px;
     padding: 0;
     box-sizing: border-box;
-    background: #424f6f;
+    background: rgb(0, 0, 0);
 }
 
 *:after,
@@ -29,12 +30,13 @@ body {
     animation: floaty 2s infinite;
 }
 
+/*rules for the ghost's body start here*/
 #spooky #body {
     position: relative;
     margin: 50px auto 0;
     width: 180px;
     height: 220px;
-    background: #f2fbf1;
+    background-color: #ffffff;
     border-top-left-radius: 90px;
     border-top-right-radius: 90px;
 }
@@ -59,7 +61,9 @@ body {
 #spooky #body:after {
     right: -18px;
 }
+/*rules for the body end here*/
 
+/*rules for eyes start here*/
 #spooky #body #eyes {
     display: flex;
     justify-content: space-between;
@@ -75,12 +79,14 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background: #252c49;
+    background: #920d0d;
     border-radius: 50%;
 }
+/*rules for eyes end here*/
 
+/*rules for mouth start here*/
 #spooky #body #mouth {
-    background: #252c49;
+    background: #e9d30e;
     margin: 25px auto 0;
     width: 60px;
     height: 30px;
@@ -96,7 +102,9 @@ body {
     width: 10px;
     height: 10px;
 }
+/*rules for mouth end here*/
 
+/*rules for body and feet start here*/
 #spooky #body #feet {
     position: absolute;
     display: flex;
@@ -111,19 +119,24 @@ body {
     content: ' ';
     width: 36px;
     height: 36px;
-    background: #f2fbf1;
+    background: #ffffff;
     border-radius: 50%;
 }
 
+/*rules for body and mouth end here*/
+
+/*rules for shadow start here*/
 #shadow {
     margin: -90px auto 0;
-    background: #252c49;
+    background: #16c710;
     width: 180px;
     height: 40px;
     border-radius: 50%;
     animation: zoomy 2s infinite;
 }
+/*rules for shadow end here*/
 
+/*animations*/
 @keyframes floaty {
     0%, 100% {
         transform: translateY(0);
@@ -143,3 +156,4 @@ body {
         transform: scale(0.8);
     }
 }
+/*everything ends here*/
